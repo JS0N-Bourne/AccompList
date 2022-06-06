@@ -29,7 +29,7 @@
 
 </head>
 
-<!-- BODY SECTION -->
+<!-- ****************************** BODY SECTION ****************************** -->
 
 <body>
 
@@ -40,7 +40,7 @@
       <ul>
         <li>
           <img src="images/icons/home-icon.png">
-          <span><a href="index.html">Home</a></span>
+          <span><a href="#Twelfth">Home</a></span>
         </li>
         <li>
           <img src="images/icons/settings-icon.png">
@@ -52,7 +52,7 @@
         </li>
         <li>
           <img src="images/icons/documents-icon.png">
-          <span><a href="#">My Documents</a></span>
+          <span><a href="#Eleventh">My Documents</a></span>
         </li>
         <li>
           <img src="images/icons/calendar-icon.png">
@@ -87,9 +87,9 @@
         <li><img src="images/icons/color9check.png">Cover Email</li>
       </ul>
       <br>
-      <span><img src="images/icons/folder_icon.png">COMPANIES</span>
+      <span><img src="images/icons/folder_icon.png">NETWORKING</span>
       <ul>
-        <li><img src="images/icons/blue_icon.png">Watch List</li>
+        <li><img src="images/icons/blue_icon.png">Company List</li>
         <div class="subnav-content">
           <ul>
             <li><img src="images/icons/amazon_icon.png"><a href="#Eighth">Amazon LLC</a></li>
@@ -98,7 +98,7 @@
             <li><img src="images/icons/netflix_icon.png"><a href="#">Netflix</a></li>
           </ul>
       </div>
-        <li><img src="images/icons/blue_icon.png"><a href="#Seventh">My Contacts</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#Seventh">Contacts and Referrals </a></li>
       </ul>
       <br>
       <span><img src="images/icons/folder_icon.png"><a href="#"></a>INTERVIEW PREP</span>
@@ -115,8 +115,8 @@
 
     <section class="child3">
 
-        <!-- THIS SECTION IS COMPLETE -->
-        <section class="interview-wrapper behavioralquestions" id="First" style="display:none">
+        <!-- INTERVIEW QUESTIONS BEHAVIORAL SECTION COMPLETE -->
+        <section class="interview-wrapper" id="First" style="display:none">
           <section class="interview-questions">
             <h3>Behavioral Questions</h3> 
             <section class="interview-questions-text">
@@ -262,12 +262,13 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-        <!-- THIS SECTION IS COMPLETE -->
-        <section class="interview-wrapper technicalquestions" id="Second" style="display:none">
+        <!-- INTERVIEW QUESTINOS TECHNICAL SECTION COMPLETE -->
+        <section class="interview-wrapper" id="Second" style="display:none">
           <section class="interview-questions">
             <h3>Technical Questions</h3>
             <section class="interview-questions-text">
               <span>HTML</span>
+              <br><br>
               <div class="wrapper">
                 <div class="accordion_container">
                   <div class="accordion-body">
@@ -355,6 +356,7 @@
                       </div>
                       </div>
                       <span>CSS</span>
+                      <br><br>
                       <hr>
                       <div class="acc-container">
                         <div class="label">11. What is CSS selector specificity and how does it work?</div>
@@ -480,7 +482,6 @@
                           Prefer class and ID selector to tag selector
                           Avoid redundant selectors
                           Care of batching
-                          
                       </div>
                       </div>
                       <hr>
@@ -515,7 +516,6 @@
                         <div class="label">25. How would you implement a web design comp that uses non-standard fonts?</div>
                         <div class="content">@font-face to write my own font-family
                           @import to import prepared web font(e.g. Google Webfonts)
-                          
                       </div>
                       </div>
                       <hr>
@@ -545,7 +545,6 @@
                           The height of an element is calculated by the content's height.
                           The width of an element is calculated by the content's width.
                           By default, paddings and borders are not part of the width and height of an element.
-                          
                       </div>
                       </div>
                       <hr>
@@ -556,17 +555,14 @@
                           The height of an element is now calculated by the content's height + vertical padding + vertical border width.
                           The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.
                           Taking into account paddings and borders as part of our box model resonates better with how designers actually imagine content in grids.
-                          
                       </div>
                       </div>
                       <hr>
                       <div class="acc-container">
                         <div class="label">30. What is the CSS display property and can you give a few examples of its use?</div>
                         <div class="content">none, block, inline, inline-block, flex, grid, table, table-row, table-cell, list-item.
-
                           None: Does not display an element (the element no longer affects the layout of the document). All child element are also no longer displayed. The document is rendered as if the element did not exist in the document tree.
-                            Inline: Elements can be laid out beside each other
-                          
+                          Inline: Elements can be laid out beside each other
                       </div>
                       </div>
                       <hr>
@@ -586,7 +582,6 @@
                         absolute - The element is removed from the flow of the page and positioned at a specified position relative to its closest positioned ancestor if any, or otherwise relative to the initial containing block. Absolutely positioned boxes can have margins, and they do not collapse with any other margins. These elements do not affect the position of other elements.
                         fixed - The element is removed from the flow of the page and positioned at a specified position relative to the viewport and doesn't move when scrolled.
                         sticky - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
-                        
                       </div>
                       </div>
                       <hr>
@@ -605,11 +600,8 @@
                       <div class="acc-container">
                         <div class="label">35. Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?</div>
                         <div class="content">Note that these two 2 approaches are not exclusive.
-
-
                           Responsive: There is one basic layout, and it changes responsively by adapting its size or other functionality according to the device’s screen size, typically the viewport width, through CSS media queries.
                           A mobile first strategy is also responsive, however it agrees we should default and define all the styles for mobile devices, and only add specific responsive rules to other devices later. It forces us to write cleaner code in respect to responsive CSS rules.
-                          
                       </div>
                       </div>
                       <hr>
@@ -618,7 +610,6 @@
                         <div class="content">Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
                           Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors.
                           Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics. The site detects the type of device used and delivers the pre-set layout for that device.
-                          
                       </div>
                       </div>
                       <hr>
@@ -626,10 +617,8 @@
                         <div class="label">37. Have you ever worked with retina graphics? If so, when and what techniques did you use?</div>
                         <div class="content">Retina is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. The key thing to know is that using a pixel ratio means these displays are emulating a lower resolution screen in order to show elements with the same size. Nowadays we consider all mobile devices retina defacto displays.
                           Browsers by default render DOM elements according to the device resolution, except for images.
-                          
                           In order to have crisp, good-looking graphics that make the best of retina displays we need to use high resolution images whenever possible. However using always the highest resolution images will have an impact on performance as more bytes will need to be sent over the wire.
                           To overcome this problem, we can use responsive images, as specified in HTML5.
-                          
                       </div>
                       </div>
                       <hr>
@@ -640,6 +629,7 @@
                       </div>
                       </div>
                       <span>JAVASCRIPT</span>
+                      <br><br>
                       <hr>
                       <div class="acc-container">
                         <div class="label">38. Explain event delegation</div>
@@ -974,8 +964,8 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-        <!-- THIS SECTION IS COMPLETE -->
-        <section class="interview-wrapper javascriptgeneral" id="Third" style="display:none">
+        <!-- INTERVIEW QUESTIONS JAVASCRIPT SECTION COMPLETE -->
+        <section class="interview-wrapper" id="Third" style="display:none">
           <section class="interview-questions">
             <h3>JavaScript General Questions</h3>
             <section class="interview-questions-text">
@@ -1029,8 +1019,8 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-        <!-- THIS SECTION IS COMPLETE -->
-        <section class="interview-wrapper node" id="Fourth" style="display:none">
+        <!-- INTERVIEW QUESTIONS NODE SECTION COMPLETE -->
+        <section class="interview-wrapper" id="Fourth" style="display:none">
           <section class="interview-questions">
             <h3>Node Questions</h3>
             <section class="interview-questions-text">
@@ -1210,7 +1200,7 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-        <!-- THIS SECTION IS COMPLETE -->
+        <!-- INTERVIEW QUESTIONS CS THEORY SECTION COMPLETE -->
         <section class="interview-wrapper cstheory" id="Fifth" style="display:none">
           <section class="interview-questions">
             <h3>CS Theory Questions</h3>
@@ -1361,7 +1351,7 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-        <!-- THIS SECTION IS COMPLETE -->
+        <!-- QUESTIONS FOR YOUR INTERVIEWERS SECTION COMPLETE -->
         <section class="interview-wrapper interviewer-questions" id="Sixth" style="display:none">
             <section class="interview-questions">
               <h3>Questions to Ask Your Interviewer</h3>
@@ -1415,8 +1405,7 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-
-        <!-- THIS SECTION IS COMPLETE -->
+        <!-- STUDY RESOURCES SECTION COMPLETE -->
         <section class="interview-wrapper resources" id="Ninth" style="display:none">
           <section class="interview-questions">
             <h3>Study Resources</h3>
@@ -1444,11 +1433,10 @@
         </section>
         <!-- THIS SECTION IS COMPLETE -->
 
-
-        <!-- THIS SECTION IS COMPLETE -->
+        <!-- CONTACTS SECTION COMPLETE -->
         <section class="interview-wrapper networking" id="Seventh" style="display:none">
           <section class="interview-questions">
-            <h3>Networking and Contacts</h3>
+            <h3>Contacts and Referrals</h3>
             <section class="interview-questions-text">
               <div class="wrapper">
                 <iframe width=100% height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLQYVJc5L0DpWv7Wi2c1g1s4mbYSkbNXdGUBShW5d4ZuJgAlJau-k6YKhER0BWhG9yWObwQtOT7ug2/pubhtml?widget=true&amp;headers=false"></iframe>
@@ -1457,12 +1445,12 @@
           </section>
         </section>
         <!-- THIS SECTION IS COMPLETE -->
-        
+     
+        <!-- AMAZON SECTION COMPLETE -->
         <section class="interview-wrapper amazon" id="Eighth" style="display:none">
           <section class="interview-questions">
             <section class="interview-questions-text">
               <div class="wrapper">
-            
                   <section class="company-name">
                     <h2>Amazon</h2>
                   </section>
@@ -1470,38 +1458,43 @@
                     <h4>Contacts</h4>
                   </section>
                   <section class="contacts-container">
-                    <section class="child-a"><a href="#"></a>
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p></a>
+                    <section class="child-a">
+                      <img src="images/chenli.jpeg" alt="LinkedIn mug">
+                      <span>Chen Li</span>
+                      </br>
+                      <p>Software Development Engineer</p>
                     </section>
-                    <section class="child-b"><a href="#">
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p></a>
+                    <section class="child-b">
+                      <img src="images/kevinmaxey.jpeg" alt="LinkedIn mug">
+                      <span>Kevin Maxey</span>
+                      </br>
+                      <p>Software Development Engineer II</p>
                     </section>
-                    <section class="child-c"><a href="#">
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p></a></a>
+                    <section class="child-c">
+                      <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                      <span>Mohammed Adnan</span>
+                      </br>
+                      <p>Software Engineer</p>
                     </section>
-                    <section class="child-g"><a href="#">
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p></a>
+                    <section class="child-g">
+                      <img src="images/nayelizamora.jpeg" alt="LinkedIn mug">
+                      <span>Nayeli Zamora</span>
+                      </br>
+                      <p>Technical Sourcing Recruiter</p>
                     </section>
-                    <section class="child-h"><a href="#">
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p></a>
+                    <section class="child-h">
+                      <img src="images/romanpenn.jpeg" alt="LinkedIn mug">
+                      <span>Roman Penn</span>
+                      </br>
+                      <p>Software Development Engineer</p>
                     </section>
-                    <section class="child-i"><a href="#">
-                      <img src="images/demo-mug.jpg" alt="Twitter mug">
-                      <span>Norman Maurer</span>
-                      <p>Senior Software Engineer</p>
+                    <section class="child-i">
+                      <img src="images/angelinaquach.jpeg" alt="LinkedIn mug">
+                      <span>Angelina Quach</span>
+                      </br>
+                      <p>Software Development Engineer</p>
                     </section>
                   </section>
-
                   <section class="open-positions-wrapper">
                   <section class="open-positions">
                     <h4>Open Positions</h4>
@@ -1611,56 +1604,200 @@
             </section>
           </section> 
         </section>  
+        <!-- THIS SECTION IS COMPLETE -->
 
-        <section class="interview-wrapper checklist" id="Tenth" style="display:none">
+        <!-- PROFESSIONAL CHECKLIST SECTION COMPLETE -->
+        <section class="interview-wrapper resources" id="Tenth" style="display:none">
           <section class="interview-questions">
-            <h3>Professional Checklist</h3> 
-            <section class="professional-checklist">
+            <h3>Professional Checklist</h3>
+            <section class="interview-questions-text">
               <div class="wrapper">
-                <section>
-                  <span>Bio Blurb</span>
-                  <p>A nationally awarded graphic designer and versatile software engineer with 10+ years experience developing high-impact websites, apps and graphics. After establishing my professional career as a graphic designer for several newspapers around the U.S. I became curious about the evolution of real-time news reporting and the increasing importance of the internet in spreading this information faster,  wider and more interactively. So I pivoted into web design after studying at NYU in New York City and found it a natural extension of my design sensibilities. Now I’m a full-stack developer who can articulate my ideas in an effective, compelling way. Whether it’s through a responsive site with front-end design and/or back-end coding, creative project direction or mobile app development my experience working with a variety of technologies has helped me excel in environments that are often fast-paced, detail-oriented and involve diverse tasks. </p>
-                </section>
-                <section>
-                  <span>Portfolio Link</span>
-                  <p>https://russmccrory.com</p>
-                </section>
-                <section>
-                  <span>Resume Link</span>
-                  <p>https://docs.google.com/document/d/1TJ37KaxE9yhE0xb9lVsztK7bkC_81yvVyPSfp5aFZUY/edit?usp=sharing</p>
-                </section>
-                <section>
-                  <span>Mugshot Link</span>
-                  <p>https://imgur.com/a/pyYrj5H</p>
-                </section>
-                <section>
-                  <span>Github Profile Link</span>
-                  <p>https://github.com/Java-Monsta</p>
-                </section>
-                <section>
-                  <span>Twitter Profile Link</span>
-                  <p>https://twitter.com/McMuttster</p>
-                </section>
-                <section>
-                <span>LinkedIn Profile Link</span>
-                <p>https://www.linkedin.com/in/russell-mccrory/</p>
-                </section>
-                <section>
-                <span>AngelList Profile Link</span>
-                <p>https://angel.com/u/russell-mccrory-1</p>
-                </section>
-                <section>
-                  <span>Cover Letter Link</span>
-                  <p>https://docs.google.com/document/d/15dPc6DlYj4Tf-YHn7q4bbHuiEY1PXiBoYL4SLZ90-ww/edit?usp=sharing</p>
-                </section>
-                <section>
-                  <span>Cover Email Link</span>
-                  <p>https://docs.google.com/document/d/109Cw4PoVpVwB5sd-dJ1saAp9LkSnxQdTQSNficMwZ8s/edit?usp=sharing</p>
-                </section>
+                <section class="resources">
+                  <h4>Bio Blurb</h4>
+                    <ul>
+                    <li>A nationally awarded graphic designer and versatile software engineer with 10+ years experience developing high-impact websites, apps and graphics. After establishing my professional career as a graphic designer for several newspapers around the U.S. I became curious about the evolution of real-time news reporting and the increasing importance of the internet in spreading this information faster,  wider and more interactively. So I pivoted into web design after studying at NYU in New York City and found it a natural extension of my design sensibilities. Now I’m a full-stack developer who can articulate my ideas in an effective, compelling way. Whether it’s through a responsive site with front-end design and/or back-end coding, creative project direction or mobile app development my experience working with a variety of technologies has helped me excel in environments that are often fast-paced, detail-oriented and involve diverse tasks.</li>
+                    </ul>
+                    </br>
+                    <h4>Portfolio Link</h4>
+                    <ul>
+                    <li>https://russmccrory.com</li>
+                    </ul>
+                  </br>
+                    <h4>Resume Link</h4>
+                    <ul>
+                      <li>https://tinyurl.com/yckfsnpuv</li>
+                    </ul>
+                  </br>
+                    <h4>Mugshot Link</h4>
+                    <ul>
+                    <li>https://imgur.com/a/pyYrj5H</li>
+                    </ul>
+                  </br>
+                    <h4>Github Profile Link</h4>
+                    <ul>
+                    <li>https://github.com/Java-Monsta</li>
+                    </ul>
+                  </br>
+                    <h4>Twitter Profile Link</h4>
+                    <ul>
+                    <li>https://twitter.com/McMuttster</li>
+                    </ul>
+                  </br>
+                    <h4>LinkedIn Profile Link</h4>
+                    <ul>
+                    <li>https://www.linkedin.com/in/russell-mccrory/</li>
+                    </ul>
+                  </br>
+                    <h4>AngelList Profile Link</h4>
+                    <ul>
+                    <li>https://angel.com/u/russell-mccrory-1</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Letter Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/2e5k33rp</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Email Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/44wwksef>
+                    </ul>
+                  </section>
               </div>        
             </section>
           </section>
         </section>
+        <!-- THIS SECTION IS COMPLETE -->
+
+        <!-- DOCUMENTS SECTION COMPLETE -->
+        <section class="interview-wrapper" id="Eleventh" style="display:none">
+          <section class="interview-questions">
+            <h3>My Documents</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+                  <section class="resume-image">
+                  <img src="images/resume.png">
+                  </section>
+                  <section src="resume-checklist">
+                  <h3>Resume Checklist</h4>
+                    <ul>
+                    <li>It must be geared towards software engineering (web development), and should have the following:</li>
+                    </ul>
+                    </br>
+                    <h4>Summary</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Skills</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Work Experience</h4>
+                    <ul>
+                    <li>Starting with most recent to the last 5 years</li>
+                    <li>Write everything in past tense</li>
+                    <li>Older or irrelevant experiences only include a small description</li>
+                    <li>Bullet points: Every bullet point has an outcome, not just a listed task</li>
+                    </ul>
+                  </br>
+                    <h4>Volunteering (optional)</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Education</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Contact Information</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Resume is one page only</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Important:</h4>
+                    <ul>
+                    <li>For some jobs, you may need to tailor your resume to be more specific to the position. Cover letters also require the same level of attention and personalization. Before submitting an application, make sure to pull keywords directly from the job description and implement them into your resume and cover letter.</li>
+                    </ul>
+                  </br>
+                    <h4>Resources</h4>
+                    <ul>
+                    <li>https://bit.ly/3d908uc | https://canva.com | https://resume.io</li>
+                    </ul>
+                  </section>
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!-- THIS SECTION IS COMPLETE -->
+
+        <!-- DASHBOARD SECTION COMPLETE -->
+        <section class="interview-wrapper" id="Twelfth" style="display:none">
+          <section class="interview-questions">
+            <h3>Dashboard</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+                  <h4>Bio Blurb</h4>
+                    <ul>
+                    <li>A nated me exnted and involve diverse tasks.</li>
+                    </ul>
+                    </br>
+                    <h4>Portfolio Link</h4>
+                    <ul>
+                    <li>https://russmccrory.com</li>
+                    </ul>
+                  </br>
+                    <h4>Resume Link</h4>
+                    <ul>
+                      <li>https://tinyurl.com/yckfsnpuv</li>
+                    </ul>
+                  </br>
+                    <h4>Mugshot Link</h4>
+                    <ul>
+                    <li>https://imgur.com/a/pyYrj5H</li>
+                    </ul>
+                  </br>
+                    <h4>Github Profile Link</h4>
+                    <ul>
+                    <li>https://github.com/Java-Monsta</li>
+                    </ul>
+                  </br>
+                    <h4>Twitter Profile Link</h4>
+                    <ul>
+                    <li>https://twitter.com/McMuttster</li>
+                    </ul>
+                  </br>
+                    <h4>LinkedIn Profile Link</h4>
+                    <ul>
+                    <li>https://www.linkedin.com/in/russell-mccrory/</li>
+                    </ul>
+                  </br>
+                    <h4>AngelList Profile Link</h4>
+                    <ul>
+                    <li>https://angel.com/u/russell-mccrory-1</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Letter Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/2e5k33rp</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Email Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/44wwksef>
+                    </ul>
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!-- THIS SECTION IS COMPLETE -->
+        
+
       </section>
         
 
@@ -1688,16 +1825,10 @@
         <a href="#"><span class="deletebutton">DELETE</span></a>
       </section>
 
-      </section>
-    </section>  
-
-
-
     </section>
 
+    </section>
   </section>
-</section>  
-
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
