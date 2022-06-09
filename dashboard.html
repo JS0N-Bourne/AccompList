@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+    	<meta charset="utf-8">
+    	<meta name="description" content="xxxx">
+    	<meta name="100 Hours Project" content="x, x, x, x">
+
+      <title>100 Hours Project</title>
+
+<!-- external CSS link -->
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("p").toggle();
+        });
+      });
+      </script>
+
+</head>
+
+<!-- ****************************** BODY SECTION ****************************** -->
+
+<body>
+
+<section class="page-container">
+  <section class="flex-grid2">
+
+  <section class="child1">
+    <ul>
+      <li>
+        <img src="images/icons/home-icon.png">
+        <span><a href="#" onclick="show('Dashboard');">Dashboard</a></span>
+      </li>
+      <li>
+        <img src="images/icons/settings-icon.png">
+        <span><a href="#" onclick="show('Settings');">Settings</a></span>
+      </li>
+      <li>
+        <img src="images/icons/profile-icon.png">
+        <span><a href="#" onclick="show('MyProfile');">My Profile</a></span>
+      </li>
+      <li>
+        <img src="images/icons/documents-icon.png">
+        <span><a href="#" onclick="show('MyDocuments');">My Documents</a></span>
+      </li>
+      <li>
+        <img src="images/icons/calendar-icon.png">
+        <span><a href="#" onclick="show('MyCalendar');">My Calendar</a></span>
+      </li>
+      <li>
+        <img src="images/icons/friends-icon.png">
+        <span><a href="#" onclick="show('MyFriends');">My Friends</a></span>
+      </li>
+      <li>
+        <img src="images/icons/search-icon.png">
+        <span><a href="#" onclick="show('MySearches');">My Searches</a></span>
+      </li>
+      <li>
+        <img src="images/icons/notes-icon.png">
+        <span><a href="#" onclick="show('MyNotes');">My Notes</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="child2">
+    <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Checklist');">PROFESSIONAL CHECKLIST</a></span>
+      <ul>
+        <li><img src="images/icons/color1check.png">Bio Blurb</li>
+        <li><img src="images/icons/color2check.png">Portfolio</li>
+        <li><img src="images/icons/color3check.png">Resume</li>
+        <li><img src="images/icons/color4check.png">GitHub</li>
+        <li><img src="images/icons/color5check.png">Twitter</li>
+        <li><img src="images/icons/color6check.png">LinkedIn</li>
+        <li><img src="images/icons/color7check.png">AngelList</li>
+        <li><img src="images/icons/color8check.png">Cover Letter</li>
+        <li><img src="images/icons/color9check.png">Cover Email</li>
+      </ul>
+    </br>
+    <span><img src="images/icons/folder_icon.png">JOB HUNT</span>
+    <ul>
+      <li><img src="images/icons/amazon_icon.png"><a href="#" onclick="show('Amazon');">Amazon LLC</a></li>
+      <li><img src="images/icons/apple_icon.png"><a href="#" onclick="show('Apple');">Apple Inc.</a></li>
+      <li><img src="images/icons/google_icon.png"><a href="#" onclick="show('Google');">Google Inc.</a></li>
+      <li><img src="images/icons/netflix_icon.png"><a href="#" onclick="show('Netflix');">Netflix</a></li>
+    </ul>  
+
+    </br>
+    <span><img src="images/icons/folder_icon.png">NETWORKING</span>
+    <ul>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Networking');">Contacts</a></li>
+      </ul>
+      </br>
+      <span><img src="images/icons/folder_icon.png">INTERVIEW PREP</span>
+      </br>
+      <ul>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('BehavioralQuestions');">Behavioral Questions</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('TechnicalQuestions');">Technical Questions</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('JavascriptGeneral');">JavaScript General</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Node');">Node</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('CSTheory');">CS Theory</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('QuestionsforInterviewers');">Questions for Interviewers</a></li>
+      <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Resources');">Resources</a></li>
+    </ul>
+  </section>
+
+<!-- DASHBOARD SECTION  -->
+
+  <section class="child-dashboard">
+
+      <section class="dashboard-wrapper" id="Dashboard" style="display:none">
+          <h3>Hi, Russell!</h3>
+          <p>Here's what's happening in your job hunt today.</p>
+          <section class="dashboard-grid">
+
+            <div class="one">
+              <span>Jobs Saved</span>
+              <h3>124</h3>
+            </div>
+            <div class="two">
+              <section class="twitter-timeline">
+              <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/tmj_aus_it?ref_src=twsrc%5Etfw">Tweets by tmj_aus_it</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </section>
+            </div>
+            <div class="three">
+              <img src="images/bird.jpg" alt="placeholder image">  
+            </div>
+            <div class="four">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/russmccrory/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=de4c39" style="min-width:100px;height:100%;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->              
+            </div>
+            <div class="five">
+            <section class="dashboard-folders-wrapper">
+              <section class="dashboard-styles">
+                <h3>Latest Job Posts</h3>
+                </br>
+              </section>
+              <section class = "tabinator">
+                <input type = "radio" id = "tab1" name = "tabs" checked>
+                <label for = "tab1">LinkedIn</label>
+                <input type = "radio" id = "tab2" name = "tabs">
+                <label for = "tab2">AngelList</label>
+                <input type = "radio" id = "tab3" name = "tabs">
+                <label for = "tab3">Indeed</label>
+                <div id = "content1">
+                  <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                  <span class="location">Austin, TX</span>
+                  <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+                  </p>
+                  <span class="title">ES Tech, Software Development Engineer</span>
+                  <span class="location">Dallas, TX</span>
+                  <p class="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                  </p>
+                  <span class="title">Front End Engineer II, Low Code</span>
+                  <span class="location">Atlanta, GA</span>
+                  <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                  </p>
+                  <span class="title">Front End Engineer</span>
+                  <span class="location">Arlington, VA</span>
+                  <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. 
+                  </p>
+                </div>
+                <div id = "content2">
+                  <span class="title">ES Tech, Software Development Engineer</span>
+                  <span class="location">Dallas, TX</span>
+                  <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                  </p>
+                  <span class="title">Front End Engineer II, Low Code</span>
+                  <span class="location">Atlanta, GA</span>
+                  <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                  </p>
+                  <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                  <span class="location">Austin, TX</span>
+                  <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys.
+                  </p>
+                  <span class="title">Front End Engineer</span>
+                  <span class="location">Arlington, VA</span>
+                  <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+                </div>
+                <div id = "content3">
+                  <span class="title">Front End Engineer II, Low Code</span>
+                  <span class="location">Atlanta, GA</span>
+                  <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                  </p>
+                  <span class="title">Front End Engineer</span>
+                  <span class="location">Arlington, VA</span>
+                  <p class="job-listing">We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. </p>
+                  <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                  <span class="location">Austin, TX</span>
+                  <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+                  </p>
+                  <span class="title">ES Tech, Software Development Engineer</span>
+                  <span class="location">Dallas, TX</span>
+                  <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work?
+                  </p>
+                </div>
+              </section>
+              </section>
+            </div>
+            <div class="six">
+              <span>Jobs Applied</span>
+                <h3>124</h3>  
+            </div>
+            <div class="seven">
+              <span>Interviews</span>
+              <h3>33</h3>  
+            </div>
+            <div class="eight">
+              <span>Offers</span>
+              <h3>2</h3>  
+            </div>
+      
+          </section>
+      </section>
+
+  </section>
+<!--  -->
+
+
+
+        
+  <!-- <section class="child4">
+
+
+  </section> -->
+
+</section>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

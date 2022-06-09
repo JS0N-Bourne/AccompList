@@ -40,83 +40,577 @@
       <ul>
         <li>
           <img src="images/icons/home-icon.png">
-          <span><a href="#Twelfth">Home</a></span>
+          <span><a href="#" onclick="show('Dashboard');">Dashboard</a></span>
         </li>
         <li>
           <img src="images/icons/settings-icon.png">
-          <span><a href="#">Settings</a></span>
+          <span><a href="#" onclick="show('Settings');">Settings</a></span>
         </li>
         <li>
           <img src="images/icons/profile-icon.png">
-          <span><a href="#">My Profile</a></span>
+          <span><a href="#" onclick="show('MyProfile');">My Profile</a></span>
         </li>
         <li>
           <img src="images/icons/documents-icon.png">
-          <span><a href="#Eleventh">My Documents</a></span>
+          <span><a href="#" onclick="show('MyDocuments');">My Documents</a></span>
         </li>
         <li>
           <img src="images/icons/calendar-icon.png">
-          <span><a href="#">My Calendar</a></span>
+          <span><a href="#" onclick="show('MyCalendar');">My Calendar</a></span>
         </li>
         <li>
           <img src="images/icons/friends-icon.png">
-          <span><a href="#">My Friends</a></span>
+          <span><a href="#" onclick="show('MyFriends');">My Friends</a></span>
         </li>
         <li>
           <img src="images/icons/search-icon.png">
-          <span><a href="#">My Searches</a></span>
+          <span><a href="#" onclick="show('MySearches');">My Searches</a></span>
         </li>
         <li>
           <img src="images/icons/notes-icon.png">
-          <span><a href="#">My Notes</a></span>
+          <span><a href="#" onclick="show('MyNotes');">My Notes</a></span>
         </li>
       </ul>
     </section>
 
     <section class="child2">
-      <span><img src="images/icons/folder_icon.png"><a href="#Tenth">PROFESSIONAL CHECKLIST</a></span>
+      <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Checklist');">PROFESSIONAL CHECKLIST</a></span>
+        <ul>
+          <li><img src="images/icons/color1check.png">Bio Blurb</li>
+          <li><img src="images/icons/color2check.png">Portfolio</li>
+          <li><img src="images/icons/color3check.png">Resume</li>
+          <li><img src="images/icons/color4check.png">GitHub</li>
+          <li><img src="images/icons/color5check.png">Twitter</li>
+          <li><img src="images/icons/color6check.png">LinkedIn</li>
+          <li><img src="images/icons/color7check.png">AngelList</li>
+          <li><img src="images/icons/color8check.png">Cover Letter</li>
+          <li><img src="images/icons/color9check.png">Cover Email</li>
+        </ul>
+      </br>
+      <span><img src="images/icons/folder_icon.png">JOB HUNT</span>
       <ul>
-        <li><img src="images/icons/color1check.png">Bio Blurb</li>
-        <li><img src="images/icons/color2check.png">Portfolio</li>
-        <li><img src="images/icons/color3check.png">Resume</li>
-        <li><img src="images/icons/color4check.png">GitHub</li>
-        <li><img src="images/icons/color5check.png">Twitter</li>
-        <li><img src="images/icons/color6check.png">LinkedIn</li>
-        <li><img src="images/icons/color7check.png">AngelList</li>
-        <li><img src="images/icons/color8check.png">Cover Letter</li>
-        <li><img src="images/icons/color9check.png">Cover Email</li>
-      </ul>
-      <br>
+        <li><img src="images/icons/amazon_icon.png"><a href="#" onclick="show('Amazon');">Amazon LLC</a></li>
+        <li><img src="images/icons/apple_icon.png"><a href="#" onclick="show('Apple');">Apple Inc.</a></li>
+        <li><img src="images/icons/google_icon.png"><a href="#" onclick="show('Google');">Google Inc.</a></li>
+        <li><img src="images/icons/netflix_icon.png"><a href="#" onclick="show('Netflix');">Netflix</a></li>
+      </ul>  
+
+      </br>
       <span><img src="images/icons/folder_icon.png">NETWORKING</span>
       <ul>
-        <li><img src="images/icons/blue_icon.png">Company List</li>
-        <div class="subnav-content">
-          <ul>
-            <li><img src="images/icons/amazon_icon.png"><a href="#Eighth">Amazon LLC</a></li>
-            <li><img src="images/icons/apple_icon.png"><a href="#">Apple Inc.</a></li>
-            <li><img src="images/icons/google_icon.png"><a href="#">Google Inc.</a></li>
-            <li><img src="images/icons/netflix_icon.png"><a href="#">Netflix</a></li>
-          </ul>
-      </div>
-        <li><img src="images/icons/blue_icon.png"><a href="#Seventh">Contacts and Referrals </a></li>
-      </ul>
-      <br>
-      <span><img src="images/icons/folder_icon.png"><a href="#"></a>INTERVIEW PREP</span>
-      <ul>
-        <li><img src="images/icons/blue_icon.png"><a href="#First">Behavioral Questions</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Second">Technical Questions</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Third">JavaScript General</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Fourth">Node</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Fifth">CS Theory</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Sixth">Questions for Interviewers</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#Ninth">Resources</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Networking');">Contacts</a></li>
+        </ul>
+        </br>
+        <span><img src="images/icons/folder_icon.png">INTERVIEW PREP</span>
+        </br>
+        <ul>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('BehavioralQuestions');">Behavioral Questions</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('TechnicalQuestions');">Technical Questions</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('JavascriptGeneral');">JavaScript General</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Node');">Node</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('CSTheory');">CS Theory</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('QuestionsforInterviewers');">Questions for Interviewers</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Resources');">Resources</a></li>
       </ul>
     </section>
 
     <section class="child3">
 
-        <!-- INTERVIEW QUESTIONS BEHAVIORAL SECTION COMPLETE -->
-        <section class="interview-wrapper" id="First" style="display:none">
+        <!-- DASHBOARD SECTION  -->
+        <section class="interview-wrapper" id="Dashboard" style="display:none">
+          <section class="dashboard dashboard-styles">
+            <h3>Hi, Russell!</h3><p>Here's what's happening in your job hunt today.</p>
+            <section class="dashboard-grid">
+              <section class="flex-grid3">
+                <section class="child100">
+                  <span class="gallery-label">Coffee Chats Scheduled</span>
+                  <img src="images/icons/calendar-icon.png">
+                  <p class="gallery-description"><b>2 p.m.</b> - John Smith, Amazon recruiter.</p>
+                </section>
+                <section class="child200">
+                  <span class="gallery-label">New LinkedIn Jobs</span>
+                  <img src="images/icons/linkedin_icon.png">
+                  <p class="gallery-description"><b>CSS3, HTML5, Photoshop</b> - This San Antonio-based CPA firm needed a decades-late update to their online presence and marketing collateral. A new logo and crisper color palette livened up their image.</p>
+                </section>
+                <section class="child300">
+                  <span class="gallery-label">New Twitter Mentions</span>
+                  <a href="https://spaceflight.netlify.app/"><img src="images/icons/linkedin_icon.png" alt="NASA galaxy viewer"></a>
+                  <p class="gallery-description"><b>JavaScript, CSS3, HTML5, Photoshop</b> - This simple app lets you fly around the galaxy in a Millennium Falcon starship with a little help from NASA and their pic of the day API integration.</p>
+                </section>
+                <section class="child400">
+                  <span class="gallery-label">Jobs Applied</span>
+                  <a href="https://210icecream.netlify.app/"><img src="images/IceCreamThumb.gif" alt="210 Ice Cream"></a>
+                  <p class="gallery-description"><b>CSS3, HTML5, Photoshop, Illustrator</b> - Small local eatery with a vibrant image needed an equally loud website to match their niche ice cream shop. Based on their color palette.</p>
+                </section>
+                <section class="child500">
+                  <span class="gallery-label">Saved Jobs</span>
+                  <a href="https://random-cocktails.netlify.app/"><img src="images/drinks.gif" alt="Random Drink Generator"></a>
+                  <p class="gallery-description"><b>JavaScript, CSS3, HTML5, Photoshop</b> - Popular inspired game app for users to discover random, but amazing cocktail ideas for parties and more. Includes targeted drinks search and music as well.</p>
+                </section>
+                <section class="child600">
+                  <span class="gallery-label">Job Offers</span>
+                  <a href="https://rapidtees.netlify.app/"><img src="images/RapidThumb.gif" alt="Rapid Tees"></a>
+                  <p class="gallery-description"><b>JavaScript, CSS3, HTML5, Photoshop, Indesign</b> - Rapid Tees is a local screen printer who does more than just clothing. They provide signage, advertising and websites.</p>
+                </section>
+                <section class="child700">
+                  <span class="gallery-label">Jobs Denied</span>
+                  <a href="https://rorschachmasks.com/"><img src="images/RorschachThumb.gif" alt="RorschachMasks"></a>
+                  <p class="gallery-description"><b>CSS3, HTML5, Photoshop, Shopify</b> - RorschachMasks is a niche costume company making unique masks with temperature reactive inks. The site exemplifies the “Show, Don’t Tell” mantra.</p>
+                </section>
+                <section class="child800">
+                  <span class="gallery-label">Online Interviews</span>
+                  <a href="https://hipster-calculator.netlify.app/"><img src="images/calculator.gif" alt="vintage hipster calculator app"></a>
+                  <p class="gallery-description"><b>JavaScript, CSS3, HTML5, Photoshop</b> - When modern technology is too amazing to ignore but the heart wants what the heart wants, plus sheeple wouldn't be caught dead using this.</p>
+                </section>
+                <section class="child900">
+                  <span class="gallery-label">Kung Fu Noodle</span>
+                  <a href="https://kung-fu-noodle.netlify.app/"><img src="images/KungFuThumb.gif" alt="Kung Fu Noodle"></a>
+                  <p class="gallery-description"><b>JavaScript, CSS3, HTML5, Photoshop, Illustrator</b> - Website design and development for local mom and pop restaurant featuring authentic Chinese recipes. Features a simple, but classy appearance</p>
+                </section>
+                <section class="child1000">
+                  <span class="gallery-label">Submission Concepts</span>
+                  <a href="subcon.html"><img src="images/SubConThumb.gif" alt="Submission Concepts"></a>
+                  <p class="gallery-description"><b>WordPress, CSS3, HTML5, PhotoShop</b> - Partner facility of 365 Fitness, where self-defense and exercise classes are offered, such as boxing, MMA, wrestling, yoga and more.</p>
+                </section>
+              </section>
+        
+            </section>
+                  </section>
+        </section>
+        <!--  -->
+
+        <!-- SETTINGS SECTION  -->
+        <section class="interview-wrapper" id="Settings" style="display:none">
+          <section class="settings">
+            <h3>Profile Information</h3>
+                <section class="settings-text">
+                  <div class="wrapper">
+                    <section>
+                      <h4>Name, location and industry</h4>
+                        <p>Choose how your name and profile fields appear</p>
+                        <h4>Personal demographic information</h4>
+                        <p>Choose what details you provide about your personal demographics</p>
+                      </br>
+
+                <h3>Display</h3>
+                        <p>Control how AccompList works when using this device</p>
+                    <h4>Dark mode</h4>
+                        <p>Choose to use your device settings or select between dark and light mode</p>
+                      </br>
+                    </br>
+
+                <h3>Site preferences</h3>
+                          <p>Manage your AccompList experience</p>
+                      <h4>Language</h4>
+                          <p>Select the lanuage you use on AccompList</p>
+                      <h4>Feed preferences</h4>
+                          <p>Customize your feeds</p>
+                        </br>
+
+                <h3>Syncing options</h3>
+                          <p>Use information you have to make networking easier</p>
+                      <h4>Sync calendar</h4>
+                          <p>Manage or sync calendar to get timely updates about who you'll be meeting with</p>
+                      <h4>Sync Twitter</h4>
+                          <p>Manage or sync Twitter and customize your display feed.</p>
+                        </br>
+
+                <h3>Account Management</h3>
+                          <p>Control your AccompList account</p>
+                      <h4>Hibernate account</h4>
+                          <p>Temporarily deeactivate your account</p>
+                      <h4>Close account</h4>
+                          <p>Learn about your options, and close your account if you wish</p>
+                      </br>               
+
+
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!--  -->
+
+        <!-- PROFILE SECTION  -->
+        <section class="interview-wrapper" id="MyProfile" style="display:none">
+          <section class="profile">
+            <h3>Profile Will Go Here</h3>
+                <section class="profile-text">
+                  <div class="wrapper">
+                    <section>
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!--  -->
+        
+        <!-- DOCUMENTS SECTION  -->
+        <section class="interview-wrapper" id="MyDocuments" style="display:none">
+          <section class="documents">
+            <h3>My Documents</h3>
+            <section class="settings-text">
+              <div class="wrapper">
+                <section class="resources">
+                  <section class="resume-image">
+                  <img src="images/resume.png">
+                  </section>
+                  <section src="resume-checklist">
+                  <h3>Resume Checklist</h4>
+                    <ul>
+                    <li>It must be geared towards software engineering (web development), and should have the following:</li>
+                    </ul>
+                    </br>
+                    <h4>Summary</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Skills</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Work Experience</h4>
+                    <ul>
+                    <li>Starting with most recent to the last 5 years</li>
+                    <li>Write everything in past tense</li>
+                    <li>Older or irrelevant experiences only include a small description</li>
+                    <li>Bullet points: Every bullet point has an outcome, not just a listed task</li>
+                    </ul>
+                  </br>
+                    <h4>Volunteering (optional)</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Education</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Contact Information</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Resume is one page only</h4>
+                    <ul>
+                    </ul>
+                  </br>
+                    <h4>Important:</h4>
+                    <ul>
+                    <li>For some jobs, you may need to tailor your resume to be more specific to the position. Cover letters also require the same level of attention and personalization. Before submitting an application, make sure to pull keywords directly from the job description and implement them into your resume and cover letter.</li>
+                    </ul>
+                  </br>
+                    <h4>Resources</h4>
+                    <ul>
+                    <li>https://bit.ly/3d908uc | https://canva.com | https://resume.io</li>
+                    </ul>
+                  </section>
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!--  -->
+
+        <!-- MY CALENDAR SECTION  -->
+        <section class="interview-wrapper" id="MyCalendar" style="display:none">
+          <section class="calendar interview-questions">
+            <h3>Calendar</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/russmccrory/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=de4c39" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->      
+                </section>
+              </div>        
+            </section>
+          </section>
+          </section>
+          <!--  -->
+
+        <!-- MY FRIENDS SECTION  -->
+        <section class="interview-wrapper" id="MyFriends" style="display:none">
+          <section class="friends interview-questions">
+            <h3>My Friends</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+
+                </section>
+              </div>        
+            </section>
+          </section>
+          </section>
+        <!--  -->
+
+        <!-- MY SEARCHES SECTION  -->
+        <section class="interview-wrapper" id="MySearches" style="display:none">
+          <section class="searches interview-questions">
+            <h3>My Searches</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+
+                </section>
+              </div>        
+            </section>
+          </section>
+          </section>
+        <!--  -->
+
+        <!-- MY NOTES SECTION  -->
+        <section class="interview-wrapper" id="MyNotes" style="display:none">
+          <section class="notes interview-questions">
+            <h3>My Notes</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+
+                </section>
+              </div>        
+            </section>
+          </section>
+          </section>
+        <!--  -->        
+
+        <!-- CHECKLIST SECTION  -->
+        <section class="interview-wrapper" id="Checklist" style="display:none">
+          <section class="checklist interview-questions">
+            <h3>Professional Checklist</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <section class="resources">
+                  <h4>Bio Blurb</h4>
+                    <ul>
+                    <li>A nationally awarded graphic designer and versatile software engineer with 10+ years experience developing high-impact websites, apps and graphics. After establishing my professional career as a graphic designer for several newspapers around the U.S. I became curious about the evolution of real-time news reporting and the increasing importance of the internet in spreading this information faster,  wider and more interactively. So I pivoted into web design after studying at NYU in New York City and found it a natural extension of my design sensibilities. Now I’m a full-stack developer who can articulate my ideas in an effective, compelling way. Whether it’s through a responsive site with front-end design and/or back-end coding, creative project direction or mobile app development my experience working with a variety of technologies has helped me excel in environments that are often fast-paced, detail-oriented and involve diverse tasks.</li>
+                    </ul>
+                    </br>
+                    <h4>Portfolio Link</h4>
+                    <ul>
+                    <li>https://russmccrory.com</li>
+                    </ul>
+                  </br>
+                    <h4>Resume Link</h4>
+                    <ul>
+                      <li>https://tinyurl.com/yckfsnpuv</li>
+                    </ul>
+                  </br>
+                    <h4>Mugshot Link</h4>
+                    <ul>
+                    <li>https://imgur.com/a/pyYrj5H</li>
+                    </ul>
+                  </br>
+                    <h4>Github Profile Link</h4>
+                    <ul>
+                    <li>https://github.com/Java-Monsta</li>
+                    </ul>
+                  </br>
+                    <h4>Twitter Profile Link</h4>
+                    <ul>
+                    <li>https://twitter.com/McMuttster</li>
+                    </ul>
+                  </br>
+                    <h4>LinkedIn Profile Link</h4>
+                    <ul>
+                    <li>https://www.linkedin.com/in/russell-mccrory/</li>
+                    </ul>
+                  </br>
+                    <h4>AngelList Profile Link</h4>
+                    <ul>
+                    <li>https://angel.com/u/russell-mccrory-1</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Letter Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/2e5k33rp</li>
+                    </ul>
+                  </br>
+                    <h4>Cover Email Link</h4>
+                    <ul>
+                    <li>https://tinyurl.com/44wwksef>
+                    </ul>
+                  </section>
+              </div>        
+            </section>
+          </section>
+        </section>
+        <!--  -->
+     
+        <!-- AMAZON SECTION  -->
+        <div class="amazon-wrapper" id="Amazon" style="display:none">
+          <section class="amazon">
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                  <section class="company-name">
+                    <h2>Amazon</h2>
+                  </section>
+                  <section class="contacts">
+                    <h4>Contacts</h4>
+                  </section>
+                  <section class="contacts-container">
+                    <section class="child-a">
+                      <img src="images/chenli.jpeg" alt="LinkedIn mug">
+                      <span>Chen Li</span>
+                      </br>
+                      <p>Software Development Engineer</p>
+                    </section>
+                    <section class="child-b">
+                      <img src="images/kevinmaxey.jpeg" alt="LinkedIn mug">
+                      <span>Kevin Maxey</span>
+                      </br>
+                      <p>Software Development Engineer II</p>
+                    </section>
+                    <section class="child-c">
+                      <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                      <span>Mohammed Adnan</span>
+                      </br>
+                      <p>Software Engineer</p>
+                    </section>
+                    <section class="child-g">
+                      <img src="images/nayelizamora.jpeg" alt="LinkedIn mug">
+                      <span>Nayeli Zamora</span>
+                      </br>
+                      <p>Technical Sourcing Recruiter</p>
+                    </section>
+                    <section class="child-h">
+                      <img src="images/romanpenn.jpeg" alt="LinkedIn mug">
+                      <span>Roman Penn</span>
+                      </br>
+                      <p>Software Development Engineer</p>
+                    </section>
+                    <section class="child-i">
+                      <img src="images/angelinaquach.jpeg" alt="LinkedIn mug">
+                      <span>Angelina Quach</span>
+                      </br>
+                      <p>Software Development Engineer</p>
+                    </section>
+                  </section>
+                  <section class="open-positions-wrapper">
+                  <section class="open-positions">
+                    <h4>Open Positions</h4>
+                  </section>
+                  <section class = "tabinator">
+                    <input type = "radio" id = "tab1" name = "tabs" checked>
+                    <label for = "tab1">LinkedIn</label>
+                    <input type = "radio" id = "tab2" name = "tabs">
+                    <label for = "tab2">AngelList</label>
+                    <input type = "radio" id = "tab3" name = "tabs">
+                    <label for = "tab3">Indeed</label>
+                    <div id = "content1">
+                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                      <span class="location">Austin, TX</span>
+                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">ES Tech, Software Development Engineer</span>
+                      <span class="location">Dallas, TX</span>
+                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer II, Low Code</span>
+                      <span class="location">Atlanta, GA</span>
+                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer</span>
+                      <span class="location">Arlington, VA</span>
+                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+                      </p>
+                    </div>
+                    <div id = "content2">
+                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                      <span class="location">Austin, TX</span>
+                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">ES Tech, Software Development Engineer</span>
+                      <span class="location">Dallas, TX</span>
+                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer II, Low Code</span>
+                      <span class="location">Atlanta, GA</span>
+                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer</span>
+                      <span class="location">Arlington, VA</span>
+                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+                    </div>
+                    <div id = "content3">
+                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                      <span class="location">Austin, TX</span>
+                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">ES Tech, Software Development Engineer</span>
+                      <span class="location">Dallas, TX</span>
+                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer II, Low Code</span>
+                      <span class="location">Atlanta, GA</span>
+                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer</span>
+                      <span class="location">Arlington, VA</span>
+                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+                    <div id = "content4">
+                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+                      <span class="location">Austin, TX</span>
+                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">ES Tech, Software Development Engineer</span>
+                      <span class="location">Dallas, TX</span>
+                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer II, Low Code</span>
+                      <span class="location">Atlanta, GA</span>
+                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                      </p>
+                      <br>
+                      <br>
+                      <span class="title">Front End Engineer</span>
+                      <span class="location">Arlington, VA</span>
+                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+                    </div>
+                  </section>
+                  </section>
+              </div>  
+            </section>
+          </section> 
+        </div>  
+        <!--  -->
+
+        <!-- NETWORKING SECTION  -->
+        <section class="interview-wrapper" id="Networking" style="display:none">
+          <section class="network interview-questions">
+            <h3>Contacts</h3>
+            <section class="interview-questions-text">
+              <div class="wrapper">
+                <iframe width=100% height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLQYVJc5L0DpWv7Wi2c1g1s4mbYSkbNXdGUBShW5d4ZuJgAlJau-k6YKhER0BWhG9yWObwQtOT7ug2/pubhtml?widget=true&amp;headers=false"></iframe>
+              </div>
+            </section>
+          </section>
+        </section>
+        <!--  -->
+
+        <!-- BEHAVIORAL QUESTIONS SECTION  -->
+        <section class="interview-wrapper" id="BehavioralQuestions" style="display:none">
           <section class="interview-questions">
             <h3>Behavioral Questions</h3> 
             <section class="interview-questions-text">
@@ -260,10 +754,10 @@
             </section>
           </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- INTERVIEW QUESTINOS TECHNICAL SECTION COMPLETE -->
-        <section class="interview-wrapper" id="Second" style="display:none">
+        <!-- TECHNICAL QUESTIONS SECTION -->
+        <section class="interview-wrapper" id="TechnicalQuestions" style="display:none">
           <section class="interview-questions">
             <h3>Technical Questions</h3>
             <section class="interview-questions-text">
@@ -962,10 +1456,10 @@
             </section>
           </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- INTERVIEW QUESTIONS JAVASCRIPT SECTION COMPLETE -->
-        <section class="interview-wrapper" id="Third" style="display:none">
+        <!-- JAVASCRIPT GENERAL SECTION -->
+        <section class="interview-wrapper" id="JavascriptGeneral" style="display:none">
           <section class="interview-questions">
             <h3>JavaScript General Questions</h3>
             <section class="interview-questions-text">
@@ -1017,10 +1511,10 @@
             </section>
           </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- INTERVIEW QUESTIONS NODE SECTION COMPLETE -->
-        <section class="interview-wrapper" id="Fourth" style="display:none">
+        <!-- NODE SECTION -->
+        <section class="interview-wrapper" id="Node" style="display:none">
           <section class="interview-questions">
             <h3>Node Questions</h3>
             <section class="interview-questions-text">
@@ -1198,10 +1692,10 @@
           </section>
         </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- INTERVIEW QUESTIONS CS THEORY SECTION COMPLETE -->
-        <section class="interview-wrapper cstheory" id="Fifth" style="display:none">
+        <!-- CS THEORY SECTION -->
+        <section class="interview-wrapper" id="CSTheory" style="display:none">
           <section class="interview-questions">
             <h3>CS Theory Questions</h3>
             <section class="interview-questions-text">
@@ -1349,10 +1843,10 @@
             </section>
           </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- QUESTIONS FOR YOUR INTERVIEWERS SECTION COMPLETE -->
-        <section class="interview-wrapper interviewer-questions" id="Sixth" style="display:none">
+        <!-- QUESTIONS FOR INTERVIEWERS SECTION  -->
+        <section class="interview-wrapper" id="QuestionsforInterviewers" style="display:none">
             <section class="interview-questions">
               <h3>Questions to Ask Your Interviewer</h3>
               <section class="interview-questions-text">
@@ -1403,10 +1897,10 @@
               </section>
             </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- STUDY RESOURCES SECTION COMPLETE -->
-        <section class="interview-wrapper resources" id="Ninth" style="display:none">
+        <!-- RESOURCES SECTION -->
+        <section class="interview-wrapper" id="Resources" style="display:none">
           <section class="interview-questions">
             <h3>Study Resources</h3>
             <section class="interview-questions-text">
@@ -1431,385 +1925,26 @@
             </section>
           </section>
         </section>
-        <!-- THIS SECTION IS COMPLETE -->
+        <!--  -->
 
-        <!-- CONTACTS SECTION COMPLETE -->
-        <section class="interview-wrapper networking" id="Seventh" style="display:none">
-          <section class="interview-questions">
-            <h3>Contacts and Referrals</h3>
-            <section class="interview-questions-text">
-              <div class="wrapper">
-                <iframe width=100% height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLQYVJc5L0DpWv7Wi2c1g1s4mbYSkbNXdGUBShW5d4ZuJgAlJau-k6YKhER0BWhG9yWObwQtOT7ug2/pubhtml?widget=true&amp;headers=false"></iframe>
-              </div>
-            </section>
-          </section>
-        </section>
-        <!-- THIS SECTION IS COMPLETE -->
-     
-        <!-- AMAZON SECTION COMPLETE -->
-        <section class="interview-wrapper amazon" id="Eighth" style="display:none">
-          <section class="interview-questions">
-            <section class="interview-questions-text">
-              <div class="wrapper">
-                  <section class="company-name">
-                    <h2>Amazon</h2>
-                  </section>
-                  <section class="contacts">
-                    <h4>Contacts</h4>
-                  </section>
-                  <section class="contacts-container">
-                    <section class="child-a">
-                      <img src="images/chenli.jpeg" alt="LinkedIn mug">
-                      <span>Chen Li</span>
-                      </br>
-                      <p>Software Development Engineer</p>
-                    </section>
-                    <section class="child-b">
-                      <img src="images/kevinmaxey.jpeg" alt="LinkedIn mug">
-                      <span>Kevin Maxey</span>
-                      </br>
-                      <p>Software Development Engineer II</p>
-                    </section>
-                    <section class="child-c">
-                      <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
-                      <span>Mohammed Adnan</span>
-                      </br>
-                      <p>Software Engineer</p>
-                    </section>
-                    <section class="child-g">
-                      <img src="images/nayelizamora.jpeg" alt="LinkedIn mug">
-                      <span>Nayeli Zamora</span>
-                      </br>
-                      <p>Technical Sourcing Recruiter</p>
-                    </section>
-                    <section class="child-h">
-                      <img src="images/romanpenn.jpeg" alt="LinkedIn mug">
-                      <span>Roman Penn</span>
-                      </br>
-                      <p>Software Development Engineer</p>
-                    </section>
-                    <section class="child-i">
-                      <img src="images/angelinaquach.jpeg" alt="LinkedIn mug">
-                      <span>Angelina Quach</span>
-                      </br>
-                      <p>Software Development Engineer</p>
-                    </section>
-                  </section>
-                  <section class="open-positions-wrapper">
-                  <section class="open-positions">
-                    <h4>Open Positions</h4>
-                  </section>
-                  <section class = "tabinator">
-                    <input type = "radio" id = "tab1" name = "tabs" checked>
-                    <label for = "tab1">LinkedIn</label>
-                    <input type = "radio" id = "tab2" name = "tabs">
-                    <label for = "tab2">AngelList</label>
-                    <input type = "radio" id = "tab3" name = "tabs">
-                    <label for = "tab3">Indeed</label>
-                    <div id = "content1">
-                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                      <span class="location">Austin, TX</span>
-                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">ES Tech, Software Development Engineer</span>
-                      <span class="location">Dallas, TX</span>
-                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer II, Low Code</span>
-                      <span class="location">Atlanta, GA</span>
-                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer</span>
-                      <span class="location">Arlington, VA</span>
-                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
-                      </p>
-                    </div>
-                    <div id = "content2">
-                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                      <span class="location">Austin, TX</span>
-                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">ES Tech, Software Development Engineer</span>
-                      <span class="location">Dallas, TX</span>
-                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer II, Low Code</span>
-                      <span class="location">Atlanta, GA</span>
-                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer</span>
-                      <span class="location">Arlington, VA</span>
-                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
-                    </div>
-                    <div id = "content3">
-                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                      <span class="location">Austin, TX</span>
-                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">ES Tech, Software Development Engineer</span>
-                      <span class="location">Dallas, TX</span>
-                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer II, Low Code</span>
-                      <span class="location">Atlanta, GA</span>
-                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer</span>
-                      <span class="location">Arlington, VA</span>
-                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
-                    <div id = "content4">
-                      <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                      <span class="location">Austin, TX</span>
-                      <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. With a range of flexible pricing and buying models, including self-service, managed service, and programmatic ad buying, these solutions help businesses build brand awareness, increase product sales, and more.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">ES Tech, Software Development Engineer</span>
-                      <span class="location">Dallas, TX</span>
-                      <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer II, Low Code</span>
-                      <span class="location">Atlanta, GA</span>
-                      <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                      </p>
-                      <br>
-                      <br>
-                      <span class="title">Front End Engineer</span>
-                      <span class="location">Arlington, VA</span>
-                      <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
-                    </div>
-                  </section>
-                  </section>
-              </div>  
-            </section>
-          </section> 
-        </section>  
-        <!-- THIS SECTION IS COMPLETE -->
-
-        <!-- PROFESSIONAL CHECKLIST SECTION COMPLETE -->
-        <section class="interview-wrapper resources" id="Tenth" style="display:none">
-          <section class="interview-questions">
-            <h3>Professional Checklist</h3>
-            <section class="interview-questions-text">
-              <div class="wrapper">
-                <section class="resources">
-                  <h4>Bio Blurb</h4>
-                    <ul>
-                    <li>A nationally awarded graphic designer and versatile software engineer with 10+ years experience developing high-impact websites, apps and graphics. After establishing my professional career as a graphic designer for several newspapers around the U.S. I became curious about the evolution of real-time news reporting and the increasing importance of the internet in spreading this information faster,  wider and more interactively. So I pivoted into web design after studying at NYU in New York City and found it a natural extension of my design sensibilities. Now I’m a full-stack developer who can articulate my ideas in an effective, compelling way. Whether it’s through a responsive site with front-end design and/or back-end coding, creative project direction or mobile app development my experience working with a variety of technologies has helped me excel in environments that are often fast-paced, detail-oriented and involve diverse tasks.</li>
-                    </ul>
-                    </br>
-                    <h4>Portfolio Link</h4>
-                    <ul>
-                    <li>https://russmccrory.com</li>
-                    </ul>
-                  </br>
-                    <h4>Resume Link</h4>
-                    <ul>
-                      <li>https://tinyurl.com/yckfsnpuv</li>
-                    </ul>
-                  </br>
-                    <h4>Mugshot Link</h4>
-                    <ul>
-                    <li>https://imgur.com/a/pyYrj5H</li>
-                    </ul>
-                  </br>
-                    <h4>Github Profile Link</h4>
-                    <ul>
-                    <li>https://github.com/Java-Monsta</li>
-                    </ul>
-                  </br>
-                    <h4>Twitter Profile Link</h4>
-                    <ul>
-                    <li>https://twitter.com/McMuttster</li>
-                    </ul>
-                  </br>
-                    <h4>LinkedIn Profile Link</h4>
-                    <ul>
-                    <li>https://www.linkedin.com/in/russell-mccrory/</li>
-                    </ul>
-                  </br>
-                    <h4>AngelList Profile Link</h4>
-                    <ul>
-                    <li>https://angel.com/u/russell-mccrory-1</li>
-                    </ul>
-                  </br>
-                    <h4>Cover Letter Link</h4>
-                    <ul>
-                    <li>https://tinyurl.com/2e5k33rp</li>
-                    </ul>
-                  </br>
-                    <h4>Cover Email Link</h4>
-                    <ul>
-                    <li>https://tinyurl.com/44wwksef>
-                    </ul>
-                  </section>
-              </div>        
-            </section>
-          </section>
-        </section>
-        <!-- THIS SECTION IS COMPLETE -->
-
-        <!-- DOCUMENTS SECTION COMPLETE -->
-        <section class="interview-wrapper" id="Eleventh" style="display:none">
-          <section class="interview-questions">
-            <h3>My Documents</h3>
-            <section class="interview-questions-text">
-              <div class="wrapper">
-                <section class="resources">
-                  <section class="resume-image">
-                  <img src="images/resume.png">
-                  </section>
-                  <section src="resume-checklist">
-                  <h3>Resume Checklist</h4>
-                    <ul>
-                    <li>It must be geared towards software engineering (web development), and should have the following:</li>
-                    </ul>
-                    </br>
-                    <h4>Summary</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Skills</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Work Experience</h4>
-                    <ul>
-                    <li>Starting with most recent to the last 5 years</li>
-                    <li>Write everything in past tense</li>
-                    <li>Older or irrelevant experiences only include a small description</li>
-                    <li>Bullet points: Every bullet point has an outcome, not just a listed task</li>
-                    </ul>
-                  </br>
-                    <h4>Volunteering (optional)</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Education</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Contact Information</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Resume is one page only</h4>
-                    <ul>
-                    </ul>
-                  </br>
-                    <h4>Important:</h4>
-                    <ul>
-                    <li>For some jobs, you may need to tailor your resume to be more specific to the position. Cover letters also require the same level of attention and personalization. Before submitting an application, make sure to pull keywords directly from the job description and implement them into your resume and cover letter.</li>
-                    </ul>
-                  </br>
-                    <h4>Resources</h4>
-                    <ul>
-                    <li>https://bit.ly/3d908uc | https://canva.com | https://resume.io</li>
-                    </ul>
-                  </section>
-                  </section>
-              </div>        
-            </section>
-          </section>
-        </section>
-        <!-- THIS SECTION IS COMPLETE -->
-
-        <!-- DASHBOARD SECTION COMPLETE -->
-        <section class="interview-wrapper" id="Twelfth" style="display:none">
-          <section class="interview-questions">
-            <h3>Dashboard</h3>
-            <section class="interview-questions-text">
-              <div class="wrapper">
-                <section class="resources">
-                  <h4>Bio Blurb</h4>
-                    <ul>
-                    <li>A nated me exnted and involve diverse tasks.</li>
-                    </ul>
-                    </br>
-                    <h4>Portfolio Link</h4>
-                    <ul>
-                    <li>https://russmccrory.com</li>
-                    </ul>
-                  </br>
-                    <h4>Resume Link</h4>
-                    <ul>
-                      <li>https://tinyurl.com/yckfsnpuv</li>
-                    </ul>
-                  </br>
-                    <h4>Mugshot Link</h4>
-                    <ul>
-                    <li>https://imgur.com/a/pyYrj5H</li>
-                    </ul>
-                  </br>
-                    <h4>Github Profile Link</h4>
-                    <ul>
-                    <li>https://github.com/Java-Monsta</li>
-                    </ul>
-                  </br>
-                    <h4>Twitter Profile Link</h4>
-                    <ul>
-                    <li>https://twitter.com/McMuttster</li>
-                    </ul>
-                  </br>
-                    <h4>LinkedIn Profile Link</h4>
-                    <ul>
-                    <li>https://www.linkedin.com/in/russell-mccrory/</li>
-                    </ul>
-                  </br>
-                    <h4>AngelList Profile Link</h4>
-                    <ul>
-                    <li>https://angel.com/u/russell-mccrory-1</li>
-                    </ul>
-                  </br>
-                    <h4>Cover Letter Link</h4>
-                    <ul>
-                    <li>https://tinyurl.com/2e5k33rp</li>
-                    </ul>
-                  </br>
-                    <h4>Cover Email Link</h4>
-                    <ul>
-                    <li>https://tinyurl.com/44wwksef>
-                    </ul>
-                  </section>
-              </div>        
-            </section>
-          </section>
-        </section>
-        <!-- THIS SECTION IS COMPLETE -->
-        
 
       </section>
         
 
 
 
-    <section class="child4">
+  <section class="child4">
+
+    <section class="right-rail">
 
       <section class="">
         <h4>Latest Tweets</h4>
       </section>
+        <!-- Twitter inline widget begin -->
       <section>
-        <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/McMuttster?ref_src=twsrc%5Etfw">Tweets by McMuttster</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </section>
+        <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/JS0N_Bourne?ref_src=twsrc%5Etfw">Tweets by McMuttster</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      
+      </section>
+        <!-- Twitter inline widget end -->      
       <section class="contact-details">
         <h4>Coffee Chats</h4>
       </section>
@@ -1819,7 +1954,6 @@
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Calendly inline widget end -->      
       </section>
-
       <section class="rightside-buttons">
         <a href="#"><span class="editbutton">EDIT</span></a>
         <a href="#"><span class="deletebutton">DELETE</span></a>
@@ -1827,8 +1961,9 @@
 
     </section>
 
-    </section>
   </section>
+
+</section>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
