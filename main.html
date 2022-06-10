@@ -54,14 +54,14 @@
           <img src="images/icons/documents-icon.png">
           <span><a href="#" onclick="show('MyDocuments');">My Documents</a></span>
         </li>
-        <li>
+        <!-- <li>
           <img src="images/icons/calendar-icon.png">
           <span><a href="#" onclick="show('MyCalendar');">My Calendar</a></span>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <img src="images/icons/friends-icon.png">
           <span><a href="#" onclick="show('MyFriends');">My Friends</a></span>
-        </li>
+        </li> -->
         <li>
           <img src="images/icons/search-icon.png">
           <span><a href="#" onclick="show('MySearches');">My Searches</a></span>
@@ -113,36 +113,37 @@
         <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Resources');">Resources</a></li>
       </ul>
     </section>
-
+  
     <section class="child3">
-
-  <!-- DASHBOARD SECTION  -->
-  <section class="child3">
-
+     
+    <!-- DASHBOARD SECTION  -->
     <section class="dashboard-wrapper" id="Dashboard" style="display:none">
         <h3>Hi, Russell!</h3>
         <p>Here's what's happening in your job hunt today.</p>
         <section class="dashboard-grid">
 
-          <div class="one">
+          <div class="jobssaved-app">
             <span>Jobs Saved</span>
             <h3>124</h3>
           </div>
-          <div class="two">
+
+          <div class="twitterfeed-app">
             <section class="dashboard-styles">
               <h3>Twitter Jobs Feed</h3>
               </br>
             </section>
-            <section class="twitter-timeline">
+            <section class="twitter-timeline-widget">
             <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/tmj_aus_it?ref_src=twsrc%5Etfw">Tweets by tmj_aus_it</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </section>
           </div>
-          <div class="three">
-            <section class="dashboard-styles">
+
+          <div class="todo-app">
+            <section class="todo-app-header">
               <h3>Today is June 9, 2022. Here are your tasks:</h3>
               </br>
             </section> 
             <section class="tasklist">
+              <section class="tasklist-items">
               <ul>
                 <li>
                   <input type="checkbox">&nbsp;&nbsp;Interview at 10 a.m. with Amazon recruiter
@@ -165,23 +166,88 @@
                 <li>
                   <input type="checkbox">&nbsp;&nbsp;Drinks with Larry at 6:30 p.m.
                 </li>
-
               </ul>
+              </section>
             </section>
           </div>
-          <div class="four">
+
+          <div class="calendar-app">
             <section class="dashboard-styles">
               <h3>Meetings Scheduled</h3>
               </br>
             </section>
-            <section class = "calendly">
-              <!-- Calendly inline widget begin -->
-              <div class="calendly-inline-widget" data-url="https://calendly.com/russmccrory/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=de4c39" style="min-width:100px;height:600px;"></div>
-              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-              <!-- Calendly inline widget end -->   
-            </section>           
+            <div class="calendar-container">
+              <div class="calendar" id="calendar-app">
+                <div class="calendar--day-view" id="day-view">
+                  <span class="day-view-exit" id="day-view-exit">&times;</span>
+                  <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+                  <div class="day-view-content">
+                    <div class="day-highlight">
+                      You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span>
+                    </div>
+                    <div class="day-add-event" id="add-day-event-box" data-active="false">
+                      <div class="row">
+                        <div class="half">
+                          <label class="add-event-label">
+                              Name of event
+                            <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name">
+                            
+                          </label>
+                        </div>
+                        <div class="qtr">
+                          <label class="add-event-label">
+                        Start Time
+                            <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                          </label>
+                        </div>
+                        <div class="qtr">
+                          <label class="add-event-label">
+                        End Time
+                            <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
+                          </label>
+                        </div>
+                        <div class="half">
+                          <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">save</a>
+                          <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div id="day-events-list" class="day-events-list">
+                      
+                    </div>
+                    <div class="day-inspiration-quote" id="inspirational-quote">
+                      Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar--view" id="calendar-view">
+                  <div class="cview__month">
+                    <span class="cview__month-last" id="calendar-month-last">Apr</span>
+                    <span class="cview__month-current" id="calendar-month">May</span>
+                    <span class="cview__month-next" id="calendar-month-next">Jun</span>
+                  </div>
+                  <div class="cview__header">Sun</div>
+                  <div class="cview__header">Mon</div>
+                  <div class="cview__header">Tue</div>
+                  <div class="cview__header">Wed</div>
+                  <div class="cview__header">Thu</div>
+                  <div class="cview__header">Fri</div>
+                  <div class="cview__header">Sat</div>
+                  <div class="calendar--view" id="dates">
+                  </div>
+                </div>
+                <div class="footer2">
+                  <span><span id="footer2-date" class="footer2__link">Today is May 30</span></span>    
+                </div>
+              </div>              
           </div>
-          <div class="five">
+
+    </div>
+
+          <div class="latestjobs-app">
             <section class="dashboard-styles">
               <h3>Latest Job Posts</h3>
               </br>
@@ -196,15 +262,15 @@
               <div id = "content1">
                 <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
                 <span class="location">Austin, TX</span>
-                <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+                <p id="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
                 </p>
                 <span class="title">ES Tech, Software Development Engineer</span>
                 <span class="location">Dallas, TX</span>
-                <p class="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+                <p id="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
                 </p>
                 <span class="title">Front End Engineer II, Low Code</span>
                 <span class="location">Atlanta, GA</span>
-                <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+                <p id="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
                 </p>
                 <span class="title">Front End Engineer</span>
                 <span class="location">Arlington, VA</span>
@@ -247,25 +313,25 @@
               </div>
             </section>
           </div>
-          <div class="six">
+
+          <div class="jobsapplied-app">
             <span>Jobs Applied</span>
-              <h3>124</h3>  
+              <h3>63</h3>  
           </div>
-          <div class="seven">
+
+          <div class="interviews-app">
             <span>Interviews</span>
-            <h3>33</h3>  
+            <h3>14</h3>  
           </div>
-          <div class="eight">
+
+          <div class="offers-app">
             <span>Offers</span>
             <h3>2</h3>  
           </div>
     
         </section>
     </section>
-
-  </section>
-  <!--  -->
-
+    <!--  -->
 
     <!-- SETTINGS SECTION  -->
     <section class="interview-wrapper" id="Settings" style="display:none">
@@ -341,9 +407,9 @@
           <div class="wrapper">
             <section class="resources">
               <section class="resume-image">
-              <img src="images/resume.png">
+                 <img src="images/resume.png">
               </section>
-              <section src="resume-checklist">
+              <section class="resume-checklist">
               <h3>Resume Checklist</h4>
                 <ul>
                 <li>It must be geared towards software engineering (web development), and should have the following:</li>
@@ -356,9 +422,9 @@
                 <h4>Skills</h4>
                 <ul>
                 </ul>
-              </br>
                 <h4>Work Experience</h4>
-                <ul>
+                <ul>                
+                </br>
                 <li>Starting with most recent to the last 5 years</li>
                 <li>Write everything in past tense</li>
                 <li>Older or irrelevant experiences only include a small description</li>
@@ -399,25 +465,21 @@
     <!--  -->
 
     <!-- MY CALENDAR SECTION  -->
-    <section class="interview-wrapper" id="MyCalendar" style="display:none">
-      <section class="calendar interview-questions">
+    <!-- <section class="interview-wrapper" id="MyCalendar" style="display:none">
+      <section class="interview-questions">
         <h3>Calendar</h3>
         <section class="interview-questions-text">
           <div class="wrapper">
             <section class="resources">
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/russmccrory/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=de4c39" style="min-width:320px;height:630px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <!-- Calendly inline widget end -->      
             </section>
           </div>        
         </section>
       </section>
-      </section>
+      </section> -->
       <!--  -->
 
     <!-- MY FRIENDS SECTION  -->
-    <section class="interview-wrapper" id="MyFriends" style="display:none">
+    <!-- <section class="interview-wrapper" id="MyFriends" style="display:none">
       <section class="friends interview-questions">
         <h3>My Friends</h3>
         <section class="interview-questions-text">
@@ -428,7 +490,7 @@
           </div>        
         </section>
       </section>
-      </section>
+      </section> -->
     <!--  -->
 
     <!-- MY SEARCHES SECTION  -->
@@ -467,7 +529,7 @@
         <h3>Professional Checklist</h3>
         <section class="interview-questions-text">
           <div class="wrapper">
-            <section class="resources">
+            <section class="professional-checklist">
               <h4>Bio Blurb</h4>
                 <ul>
                 <li>A nationally awarded graphic designer and versatile software engineer with 10+ years experience developing high-impact websites, apps and graphics. After establishing my professional career as a graphic designer for several newspapers around the U.S. I became curious about the evolution of real-time news reporting and the increasing importance of the internet in spreading this information faster,  wider and more interactively. So I pivoted into web design after studying at NYU in New York City and found it a natural extension of my design sensibilities. Now I’m a full-stack developer who can articulate my ideas in an effective, compelling way. Whether it’s through a responsive site with front-end design and/or back-end coding, creative project direction or mobile app development my experience working with a variety of technologies has helped me excel in environments that are often fast-paced, detail-oriented and involve diverse tasks.</li>
@@ -527,10 +589,73 @@
     <!-- AMAZON SECTION  -->
     <div class="amazon-wrapper" id="Amazon" style="display:none">
       <section class="amazon">
-        <section class="interview-questions-text">
+        <section class="amazon-styles">
           <div class="wrapper">
               <section class="company-name">
                 <h2>Amazon</h2>
+              </section>
+              <section class="contacts">
+                <h4>Contacts</h4>
+              </section>
+              <section class="contacts-container">
+                <section class="child-a">
+                  <img src="images/chenli.jpeg" alt="LinkedIn mug">
+                  <span>Chen Li</span>
+                  </br>
+                  <p>Software Development Engineer</p>
+                </section>
+                <section class="child-b">
+                  <img src="images/kevinmaxey.jpeg" alt="LinkedIn mug">
+                  <span>Kevin Maxey</span>
+                  </br>
+                  <p>Software Development Engineer II</p>
+                </section>
+                <section class="child-c">
+                  <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                  <span>Mohammed Adnan</span>
+                  </br>
+                  <p>Software Engineer</p>
+                </section>
+                <section class="child-d">
+                  <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                  <span>Mohammed Adnan</span>
+                  </br>
+                  <p>Software Engineer</p>
+                </section>
+                <section class="child-e">
+                  <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                  <span>Mohammed Adnan</span>
+                  </br>
+                  <p>Software Engineer</p>
+                </section>
+                <section class="child-f">
+                  <img src="images/mohammedadman.jpeg" alt="LinkedIn mug">
+                  <span>Mohammed Adnan</span>
+                  </br>
+                  <p>Software Engineer</p>
+                </section>
+                <section class="child-g">
+                  <img src="images/nayelizamora.jpeg" alt="LinkedIn mug">
+                  <span>Nayeli Zamora</span>
+                  </br>
+                  <p>Technical Sourcing Recruiter</p>
+                </section>
+                <section class="child-h">
+                  <img src="images/romanpenn.jpeg" alt="LinkedIn mug">
+                  <span>Roman Penn</span>
+                  </br>
+                  <p>Software Development Engineer</p>
+                </section>
+                <section class="child-i">
+                  <img src="images/angelinaquach.jpeg" alt="LinkedIn mug">
+                  <span>Angelina Quach</span>
+                  </br>
+                  <p>Software Development Engineer</p>
+                </section>
+              </section>
+            </br>
+              <section class="company-name">
+                <h2>Apple</h2>
               </section>
               <section class="contacts">
                 <h4>Contacts</h4>
@@ -584,7 +709,7 @@
       <section class="network interview-questions">
         <h3>Contacts</h3>
         <section class="interview-questions-text">
-          <div class="wrapper">
+          <div class="network-wrapper">
             <iframe width=100% height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLQYVJc5L0DpWv7Wi2c1g1s4mbYSkbNXdGUBShW5d4ZuJgAlJau-k6YKhER0BWhG9yWObwQtOT7ug2/pubhtml?widget=true&amp;headers=false"></iframe>
           </div>
         </section>
