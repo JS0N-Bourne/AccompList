@@ -1,3 +1,5 @@
+// This section handles the expanding containers on the Q&A's
+
 const accordion = document.getElementsByClassName('acc-container');
 
 for (i=0; i<accordion.length; i++) {
@@ -6,6 +8,8 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 
+
+// This section controls the hiding/showing of various sections of main.html
 
 var divs = ["Dashboard", "Settings", "MyProfile", "MyDocuments", "MySearches", "MyNotes", "Checklist", "Amazon", "Networking", "BehavioralQuestions", "TechnicalQuestions", "JavascriptGeneral", "Node", "CSTheory", "QuestionsforInterviewers", "Resources"];
 var visibleId = null;
@@ -28,6 +32,8 @@ function hide() {
   }
 } 
 
+
+// This section handles the calendar functions
 
 function CalendarApp(date) {
   
@@ -527,46 +533,260 @@ var calendar = new CalendarApp();
 console.log(calendar);
 
 
+// LEFT-NAV CODE GOES HERE
+
+class LeftNav extends HTMLElement {
+  connectedCallback(){
+    this.innerHTML = `
+    <section class="child1">
+    <ul>
+      <li>
+        <img src="images/icons/home-icon.png">
+        <span><a href="#" onclick="show('Dashboard');">Dashboard</a></span>
+      </li>
+      <li>
+        <img src="images/icons/settings-icon.png">
+        <span><a href="#" onclick="show('Settings');">Settings</a></span>
+      </li>
+      <li>
+        <img src="images/icons/profile-icon.png">
+        <span><a href="#" onclick="show('MyProfile');">My Profile</a></span>
+      </li>
+      <li>
+        <img src="images/icons/documents-icon.png">
+        <span><a href="#" onclick="show('MyDocuments');">My Documents</a></span>
+      </li>
+      <li>
+        <img src="images/icons/search-icon.png">
+        <span><a href="#" onclick="show('MySearches');">My Searches</a></span>
+      </li>
+      <li>
+        <img src="images/icons/notes-icon.png">
+        <span><a href="#" onclick="show('MyNotes');">My Notes</a></span>
+      </li>
+    </ul>
+  </section>
+    `
+  }
+}
+
+customElements.define('left-nav',LeftNav)
+
+
+// MAIN-NAV CODE GOES HERE
+
+class MainNav extends HTMLElement {
+  connectedCallback(){
+    this.innerHTML = `
+    <section class="child2">
+      <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Checklist');">PROFESSIONAL CHECKLIST</a></span>
+        <ul>
+          <li><img src="images/icons/color1check.png">Bio Blurb</li>
+          <li><img src="images/icons/color2check.png">Portfolio</li>
+          <li><img src="images/icons/color3check.png">Resume</li>
+          <li><img src="images/icons/color4check.png">GitHub</li>
+          <li><img src="images/icons/color5check.png">Twitter</li>
+          <li><img src="images/icons/color6check.png">LinkedIn</li>
+          <li><img src="images/icons/color7check.png">AngelList</li>
+          <li><img src="images/icons/color8check.png">Cover Letter</li>
+          <li><img src="images/icons/color9check.png">Cover Email</li>
+        </ul>
+      </br>
+      <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Amazon');">COMPANIES</a></span>
+      <ul>
+        <li><img src="images/icons/amazon_icon.png"><a href="#" onclick="show('Amazon');">Amazon LLC</a></li>
+        <li><img src="images/icons/apple_icon.png"><a href="#" onclick="show('Apple');">Apple Inc.</a></li>
+        <li><img src="images/icons/google_icon.png"><a href="#" onclick="show('Google');">Google Inc.</a></li>
+        <li><img src="images/icons/netflix_icon.png"><a href="#" onclick="show('Netflix');">Netflix</a></li>
+      </ul>  
+
+      </br>
+      <span><img src="images/icons/folder_icon.png">NETWORKING</span>
+      <ul>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Networking');">Contacts</a></li>
+        </ul>
+        </br>
+        <span><img src="images/icons/folder_icon.png">INTERVIEW PREP</span>
+        </br>
+        <ul>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('BehavioralQuestions');">Behavioral Questions</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('TechnicalQuestions');">Technical Questions</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('JavascriptGeneral');">JavaScript General</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Node');">Node</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('CSTheory');">CS Theory</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('QuestionsforInterviewers');">Questions for Interviewers</a></li>
+        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Resources');">Resources</a></li>
+      </ul>
+    </section>
+    `
+  }
+}
+
+customElements.define('main-nav',MainNav)
+
+
+// This section controls the live date and time updates
+
+var today = new Date();
+var day = today.getDay();
+var dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+document.querySelector(".day").innerHTML = "Today is " + dayList[day] + ".";
+// console.log('Today is: ' + dayList[day] + ".");
+
+var hour = today.getHours();
+var minute = today.getMinutes();
+var second = today.getSeconds();
+
+var prepand = (hour >= 12) ? " PM" : " AM";
+
+hour = (hour >= 12) ? hour - 12 : hour;
+
+if(hour === 0 && prepand === " PM") {
+  if(minute === 0 && second === 0) {
+    hour = 12;
+    prepand = " Noon";
+  }
+  else {
+    hour = 12;
+    prepand = " PM";
+  }
+}
+if (hour === 0 && prepand === " AM"){
+  if(minute === 0 && second === 0){
+    hour = 12;
+    prepand = " Midnight";
+  }
+  else {
+    hour = 12;
+    prepand = " AM";
+  }
+}
+
+document.querySelector(".time").innerHTML = "The current time is " + hour + " : " + minute + " " + prepand;
+// console.log("Current time is: " + hour + prepand + " : " + minute + " : " + second);
 
 
 
 
 
-// var app = {
-//   settings: {
-//     container: $('.calendar'),
-//     calendar: $('.front'),
-//     days: $('.weeks span'),
-//     form: $('.back'),
-//     input: $('.back input'),
-//     buttons: $('.back button')
-//   },
+//This section is for the To-Do list components
 
-//   init: function() {
-//     instance = this;
-//     settings = this.settings;
-//     this.bindUIActions();
-//   },
+window.addEventListener('load', () => {
+	todos = JSON.parse(localStorage.getItem('todos')) || [];
+	const nameInput = document.querySelector('#name');
+	const newTodoForm = document.querySelector('#new-todo-form');
 
-//   swap: function(currentSide, desiredSide) {
-//     settings.container.toggleClass('flip');
+	const username = localStorage.getItem('username') || '';
 
-//     currentSide.fadeOut(900);
-//     currentSide.hide();
-//     desiredSide.show();
+	nameInput.value = username;
 
-//   },
+	nameInput.addEventListener('change', (e) => {
+		localStorage.setItem('username', e.target.value);
+	})
 
-//   bindUIActions: function() {
-//     settings.days.on('click', function(){
-//       instance.swap(settings.calendar, settings.form);
-//       settings.input.focus();
-//     });
+	newTodoForm.addEventListener('submit', e => {
+		e.preventDefault();
 
-//     settings.buttons.on('click', function(){
-//       instance.swap(settings.form, settings.calendar);
-//     });
-//   }
-// }
+		const todo = {
+			content: e.target.elements.content.value,
+			category: e.target.elements.category.value,
+			done: false,
+			createdAt: new Date().getTime()
+		}
 
-// app.init();
+		todos.push(todo);
+
+		localStorage.setItem('todos', JSON.stringify(todos));
+
+		// Reset the form
+		e.target.reset();
+
+		DisplayTodos()
+	})
+
+	DisplayTodos()
+})
+
+function DisplayTodos () {
+	const todoList = document.querySelector('#todo-list');
+	todoList.innerHTML = "";
+
+	todos.forEach(todo => {
+		const todoItem = document.createElement('div');
+		todoItem.classList.add('todo-item');
+
+		const label = document.createElement('label');
+		const input = document.createElement('input');
+		const span = document.createElement('span');
+		const content = document.createElement('div');
+		const actions = document.createElement('div');
+		const edit = document.createElement('button');
+		const deleteButton = document.createElement('button');
+
+		input.type = 'checkbox';
+		input.checked = todo.done;
+		span.classList.add('bubble');
+		if (todo.category == 'personal') {
+			span.classList.add('personal');
+		} else {
+			span.classList.add('business');
+		}
+		content.classList.add('todo-content');
+		actions.classList.add('actions');
+		edit.classList.add('edit');
+		deleteButton.classList.add('delete');
+
+		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+		edit.innerHTML = 'Edit';
+		deleteButton.innerHTML = 'Delete';
+
+		label.appendChild(input);
+		label.appendChild(span);
+		actions.appendChild(edit);
+		actions.appendChild(deleteButton);
+		todoItem.appendChild(label);
+		todoItem.appendChild(content);
+		todoItem.appendChild(actions);
+
+		todoList.appendChild(todoItem);
+
+		if (todo.done) {
+			todoItem.classList.add('done');
+		}
+		
+		input.addEventListener('change', (e) => {
+			todo.done = e.target.checked;
+			localStorage.setItem('todos', JSON.stringify(todos));
+
+			if (todo.done) {
+				todoItem.classList.add('done');
+			} else {
+				todoItem.classList.remove('done');
+			}
+
+			DisplayTodos()
+
+		})
+
+		edit.addEventListener('click', (e) => {
+			const input = content.querySelector('input');
+			input.removeAttribute('readonly');
+			input.focus();
+			input.addEventListener('blur', (e) => {
+				input.setAttribute('readonly', true);
+				todo.content = e.target.value;
+				localStorage.setItem('todos', JSON.stringify(todos));
+				DisplayTodos()
+
+			})
+		})
+
+		deleteButton.addEventListener('click', (e) => {
+			todos = todos.filter(t => t != todo);
+			localStorage.setItem('todos', JSON.stringify(todos));
+			DisplayTodos()
+		})
+
+	})
+}

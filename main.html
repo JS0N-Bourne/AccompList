@@ -5,7 +5,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="xxxx">
     	<meta name="100 Hours Project" content="x, x, x, x">
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>100 Hours Project</title>
 
 <!-- external CSS link -->
@@ -17,8 +17,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+      <link rel="preload" href="./assets/images/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
       $(document).ready(function(){
         $("button").click(function(){
@@ -30,148 +31,178 @@
 </head>
 
 <!-- ****************************** BODY SECTION ****************************** -->
-
 <body>
 
 <section class="page-container">
   <section class="flex-grid2">
 
-    <section class="child1">
-      <ul>
-        <li>
-          <img src="images/icons/home-icon.png">
-          <span><a href="#" onclick="show('Dashboard');">Dashboard</a></span>
-        </li>
-        <li>
-          <img src="images/icons/settings-icon.png">
-          <span><a href="#" onclick="show('Settings');">Settings</a></span>
-        </li>
-        <li>
-          <img src="images/icons/profile-icon.png">
-          <span><a href="#" onclick="show('MyProfile');">My Profile</a></span>
-        </li>
-        <li>
-          <img src="images/icons/documents-icon.png">
-          <span><a href="#" onclick="show('MyDocuments');">My Documents</a></span>
-        </li>
-        <!-- <li>
-          <img src="images/icons/calendar-icon.png">
-          <span><a href="#" onclick="show('MyCalendar');">My Calendar</a></span>
-        </li> -->
-        <!-- <li>
-          <img src="images/icons/friends-icon.png">
-          <span><a href="#" onclick="show('MyFriends');">My Friends</a></span>
-        </li> -->
-        <li>
-          <img src="images/icons/search-icon.png">
-          <span><a href="#" onclick="show('MySearches');">My Searches</a></span>
-        </li>
-        <li>
-          <img src="images/icons/notes-icon.png">
-          <span><a href="#" onclick="show('MyNotes');">My Notes</a></span>
-        </li>
-      </ul>
-    </section>
+   <left-nav></left-nav> 
 
-    <section class="child2">
-      <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Checklist');">PROFESSIONAL CHECKLIST</a></span>
-        <ul>
-          <li><img src="images/icons/color1check.png">Bio Blurb</li>
-          <li><img src="images/icons/color2check.png">Portfolio</li>
-          <li><img src="images/icons/color3check.png">Resume</li>
-          <li><img src="images/icons/color4check.png">GitHub</li>
-          <li><img src="images/icons/color5check.png">Twitter</li>
-          <li><img src="images/icons/color6check.png">LinkedIn</li>
-          <li><img src="images/icons/color7check.png">AngelList</li>
-          <li><img src="images/icons/color8check.png">Cover Letter</li>
-          <li><img src="images/icons/color9check.png">Cover Email</li>
-        </ul>
-      </br>
-      <span><img src="images/icons/folder_icon.png"><a href="#" onclick="show('Amazon');">COMPANIES</a></span>
-      <ul>
-        <li><img src="images/icons/amazon_icon.png"><a href="#" onclick="show('Amazon');">Amazon LLC</a></li>
-        <li><img src="images/icons/apple_icon.png"><a href="#" onclick="show('Apple');">Apple Inc.</a></li>
-        <li><img src="images/icons/google_icon.png"><a href="#" onclick="show('Google');">Google Inc.</a></li>
-        <li><img src="images/icons/netflix_icon.png"><a href="#" onclick="show('Netflix');">Netflix</a></li>
-      </ul>  
-
-      </br>
-      <span><img src="images/icons/folder_icon.png">NETWORKING</span>
-      <ul>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Networking');">Contacts</a></li>
-        </ul>
-        </br>
-        <span><img src="images/icons/folder_icon.png">INTERVIEW PREP</span>
-        </br>
-        <ul>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('BehavioralQuestions');">Behavioral Questions</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('TechnicalQuestions');">Technical Questions</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('JavascriptGeneral');">JavaScript General</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Node');">Node</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('CSTheory');">CS Theory</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('QuestionsforInterviewers');">Questions for Interviewers</a></li>
-        <li><img src="images/icons/blue_icon.png"><a href="#" onclick="show('Resources');">Resources</a></li>
-      </ul>
-    </section>
+   <main-nav></main-nav>
   
     <section class="child3">
      
     <!-- DASHBOARD SECTION  -->
-    <section class="dashboard-wrapper" id="Dashboard" style="display:none">
+    <section class="dashboard-wrapper" id="Dashboard">
         <h3>Hi, Russell!</h3>
-        <p>Here's what's happening in your job hunt today.</p>
+        <!-- <p>Here's what's happening in your job hunt today.</p> -->
+        <div class="day-content">
+          <div class="day"></div>
+          <div class="time"></div>
+        </div>
+
         <section class="dashboard-grid">
 
-          <div class="jobssaved-app">
-            <span>Jobs Saved</span>
-            <h3>124</h3>
-          </div>
+    <div class="jobssaved-app">
+      <span>Jobs Saved</span>
+      <h3>124</h3>
+    </div>
 
-          <div class="twitterfeed-app">
-            <section class="dashboard-styles">
-              <h3>Twitter Jobs Feed</h3>
-              </br>
-            </section>
-            <section class="twitter-timeline-widget">
-            <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/tmj_aus_it?ref_src=twsrc%5Etfw">Tweets by tmj_aus_it</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </section>
-          </div>
 
-          <div class="todo-app">
-            <section class="todo-app-header">
-              <h3>Today is June 9, 2022. Here are your tasks:</h3>
-              </br>
-            </section> 
-            <section class="tasklist">
-              <section class="tasklist-items">
-              <ul>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Interview at 10 a.m. with Amazon recruiter
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Discuss website mockup with freelance client
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Update LinkedIn profile
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Coffee chat at 2 p.m. with Ruth Reed
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Find new connections on LinkedIn and Twitter
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Complete more CodeWars challenges and upload to Github
-                </li>
-                <li>
-                  <input type="checkbox">&nbsp;&nbsp;Drinks with Larry at 6:30 p.m.
-                </li>
-              </ul>
-              </section>
-            </section>
-          </div>
 
-          <div class="calendar-app">
+    <div class="todo-app">
+  	<!-- App Wrapper -->
+    <main class="app">
+      <!-- Greeting -->
+      <section class="greeting">
+        <h2 class="title">
+          <input type="text" id="name" />
+        </h2>
+      </section>
+      <!-- End of Greeting -->
+      
+      <!-- New Todo -->
+      <section class="create-todo">
+      </br></br>
+        <h3>Here's today's to-do list</h3>
+        </br></br>
+        <form id="new-todo-form">
+          <!-- <h4>Add to your list here</h4> -->
+          <input 
+            type="text" 
+            placeholder="Add to your list here e.g. Update resume"
+            name="content"
+            id="content" />
+          </br>
+          <div class="options-category">
+            <h4>Pick a category</h4>
+          </div>
+          <div class="options">
+            <label>
+              <input type="radio" name="category" id="category1" value="business" /> 
+              <div class="business-div"><span class="bubble business"></span>Business</div>
+            </label>
+          </div>  
+          <div class="options">
+            <label>
+              <input type="radio" name="category" id="category2" value="personal" />
+              <div class="personal-div"><span class="bubble personal"></span>Personal</div>
+            </label>
+          </div>
+  
+          <input type="submit" value="Add to the list" />
+        </form>
+      </section>
+      <!-- End of New Todo -->
+  
+      <!-- Todo List -->
+      <section class="todo-list">
+        <!-- <h3>TODO LIST</h3> -->
+        <div class="list" id="todo-list"></div>
+      </section>
+      <!-- End of Todo List -->
+  
+    </main>
+    <!-- End of App Wrapper -->
+
+  </div>
+
+  
+    <div class="latestjobs-app">
+      <section class="dashboard-styles">
+        <h3>Latest Job Posts</h3>
+        </br>
+      </section>
+      <section class = "tabinator">
+        <input type = "radio" id = "tab1" name = "tabs" checked>
+        <label for = "tab1">LinkedIn</label>
+        <input type = "radio" id = "tab2" name = "tabs">
+        <label for = "tab2">AngelList</label>
+        <input type = "radio" id = "tab3" name = "tabs">
+        <label for = "tab3">Indeed</label>
+        <div id = "content1">
+          <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+          <span class="location">Austin, TX</span>
+          <p id="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+          </p>
+          <span class="title">ES Tech, Software Development Engineer</span>
+          <span class="location">Dallas, TX</span>
+          <p id="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+          </p>
+          <span class="title">Front End Engineer II, Low Code</span>
+          <span class="location">Atlanta, GA</span>
+          <p id="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+          </p>
+          <span class="title">Front End Engineer</span>
+          <span class="location">Arlington, VA</span>
+          <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. 
+          </p>
+          <span class="title">ES Tech, Software Development Engineer</span>
+          <span class="location">Dallas, TX</span>
+          <p id="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+          </p>
+          <span class="title">Front End Engineer II, Low Code</span>
+          <span class="location">Atlanta, GA</span>
+          <p id="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+          </p>
+          <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+          <span class="location">Austin, TX</span>
+          <p id="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+          </p>
+          <span class="title">ES Tech, Software Development Engineer</span>
+          <span class="location">Dallas, TX</span>
+          <p id="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+          </p>
+        </div>
+        <div id = "content2">
+          <span class="title">ES Tech, Software Development Engineer</span>
+          <span class="location">Dallas, TX</span>
+          <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
+          </p>
+          <span class="title">Front End Engineer II, Low Code</span>
+          <span class="location">Atlanta, GA</span>
+          <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+          </p>
+          <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+          <span class="location">Austin, TX</span>
+          <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys.
+          </p>
+          <span class="title">Front End Engineer</span>
+          <span class="location">Arlington, VA</span>
+          <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
+        </div>
+        <div id = "content3">
+          <span class="title">Front End Engineer II, Low Code</span>
+          <span class="location">Atlanta, GA</span>
+          <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
+          </p>
+          <span class="title">Front End Engineer</span>
+          <span class="location">Arlington, VA</span>
+          <p class="job-listing">We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. </p>
+          <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
+          <span class="location">Austin, TX</span>
+          <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
+          </p>
+          <span class="title">ES Tech, Software Development Engineer</span>
+          <span class="location">Dallas, TX</span>
+          <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work?
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="calendar-app">
             <section class="dashboard-styles">
               <h3>Meetings Scheduled</h3>
               </br>
@@ -247,87 +278,30 @@
 
     </div>
 
-          <div class="latestjobs-app">
-            <section class="dashboard-styles">
-              <h3>Latest Job Posts</h3>
-              </br>
-            </section>
-            <section class = "tabinator">
-              <input type = "radio" id = "tab1" name = "tabs" checked>
-              <label for = "tab1">LinkedIn</label>
-              <input type = "radio" id = "tab2" name = "tabs">
-              <label for = "tab2">AngelList</label>
-              <input type = "radio" id = "tab3" name = "tabs">
-              <label for = "tab3">Indeed</label>
-              <div id = "content1">
-                <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                <span class="location">Austin, TX</span>
-                <p id="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
-                </p>
-                <span class="title">ES Tech, Software Development Engineer</span>
-                <span class="location">Dallas, TX</span>
-                <p id="job-listing">Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                </p>
-                <span class="title">Front End Engineer II, Low Code</span>
-                <span class="location">Atlanta, GA</span>
-                <p id="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                </p>
-                <span class="title">Front End Engineer</span>
-                <span class="location">Arlington, VA</span>
-                <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. 
-                </p>
-              </div>
-              <div id = "content2">
-                <span class="title">ES Tech, Software Development Engineer</span>
-                <span class="location">Dallas, TX</span>
-                <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? If so, we are looking for strong engineers at Amazonian Experience and Technology team to build greenfield applications using latest native AWS services for millions of Amazonians to get support on their important life events.
-                </p>
-                <span class="title">Front End Engineer II, Low Code</span>
-                <span class="location">Atlanta, GA</span>
-                <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                </p>
-                <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                <span class="location">Austin, TX</span>
-                <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys.
-                </p>
-                <span class="title">Front End Engineer</span>
-                <span class="location">Arlington, VA</span>
-                <p class="job-listing">We are building a brand-new AWS SDLC product that will enable customers to continuously increase the speed, frequency and reliability of their development processes and software deployments. We have a diverse and established team that needs passionate engineers to define and refine what it means to build developer experiences at Amazon scale.
-              </div>
-              <div id = "content3">
-                <span class="title">Front End Engineer II, Low Code</span>
-                <span class="location">Atlanta, GA</span>
-                <p class="job-listing">The mission for Amazon Low-code is to enable millions of users to build mobile and web applications easily and efficiently with minimum programming skills. Low Code/No Code is still at its early stage and at AWS we are uniquely positioned to redefine what it means and make it mainstream with our hyper focus on customers.
-                </p>
-                <span class="title">Front End Engineer</span>
-                <span class="location">Arlington, VA</span>
-                <p class="job-listing">We are seeking builders to be technical design leaders on the founding team of this new AWS developer product. We are looking for passionate front-end developers to grow and shape this new offering and build a brand-new experience to make shipping code fast, simple, and painless. </p>
-                <span class="title">Sr. Front End Engineer, Amazon Publisher Services</span>
-                <span class="location">Austin, TX</span>
-                <p class="job-listing">Amazon Advertising is dedicated to driving measurable outcomes for brand advertisers, agencies, authors, and entrepreneurs. Our ad solutions—including sponsored, display, video, and custom ads—leverage Amazon's innovations and insights to find, attract, and engage intended audiences throughout their daily journeys. 
-                </p>
-                <span class="title">ES Tech, Software Development Engineer</span>
-                <span class="location">Dallas, TX</span>
-                <p class="job-listing">Do you like working on projects that are highly visible and are tied closely to employee experience at Amazon scale? Are you seeking an environment where you can drive innovation leveraging the scalability and innovation with Amazon's AWS cloud services? Do you want to pave the future for Amazon employee experience, enhancing their life better on or off work?
-                </p>
-              </div>
-            </section>
-          </div>
+    <div class="twitterfeed-app">
+      <section class="dashboard-styles">
+        <h3>Twitter Jobs Feed</h3>
+        </br>
+      </section>
+      <section class="twitter-timeline-widget">
+      <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/tmj_aus_it?ref_src=twsrc%5Etfw">Tweets by tmj_aus_it</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </section>
+    </div>
 
-          <div class="jobsapplied-app">
+    <div class="jobsapplied-app">
             <span>Jobs Applied</span>
               <h3>63</h3>  
-          </div>
+    </div>
 
-          <div class="interviews-app">
-            <span>Interviews</span>
-            <h3>14</h3>  
-          </div>
+    <div class="interviews-app">
+      <span>Interviews</span>
+      <h3>14</h3>  
+    </div>
 
-          <div class="offers-app">
-            <span>Offers</span>
-            <h3>2</h3>  
-          </div>
+    <div class="offers-app">
+      <span>Offers</span>
+      <h3>2</h3>  
+    </div>
     
         </section>
     </section>
